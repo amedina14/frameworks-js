@@ -14,6 +14,49 @@ class Coche {
     }
 }
 
+class Autobus extends Coche{
+    constructor(modelo, velocidad, antiguedad){
+        super(modelo, velocidad, antiguedad);
+        this.altura = 5;
+        this.largueza = 15;
+        this.capienza = 100;
+        this.sillas = 30;
+    }
+
+    mostrarAltura(){
+        return "La altura del bus es: "+this.altura;
+    }
+    setAltura(altura){
+        this.altura = altura;
+    }
+    mostrarLargueza(){
+        return this.largueza;
+    }
+    setLargueza(largueza){
+        this.largueza = largueza;
+    }
+    mostrarCapienza(){
+        return this.capienza;
+    }
+    setCapienza(capienza){
+        this.capienza = capienza;
+    }
+    mostrarSillas(){
+        return this.sillas;
+    }
+    setSillas(sillas){
+        this.sillas = sillas;
+    }
+}
+
+//-----------------------------------Buses
+var autobus1 = new Autobus('PEGASUS', 2500, 2030);
+console.log(autobus1);
+console.log(autobus1.mostrarAltura());
+console.log("La nueva altura del bus es: "+prompt("Introduce nueva altura:",autobus1.setAltura()));
+
+
+//-----------------------------------Coches
 var coche1 = new Coche('Kuga', 200, 2020);
 var coche2 = new Coche('Mercedes', 275, 2018);
 var coche3 = new Coche('BMW', 300, 2014);
