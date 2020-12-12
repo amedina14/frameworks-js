@@ -1,0 +1,8 @@
+npm init
+more file //visualizza contenuti come cat
+npm help
+lezione 65 da fare
+npm install --save express //lib che permette di creare l'api con node (include metodi http)
+npm install --save body-parser //lib convierte datos del form a json, objt usable por js o node.
+npm install --save mongoose //lib orm crud data management
+npm install --save connect-multiparty //lib upload files con nodejs
