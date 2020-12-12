@@ -29,7 +29,7 @@ body{
 }
 
 #logo{
-    width: 40%;
+    width: 30%;
     font-size: 30px;
     float: left;
     margin-top: 35px;
@@ -60,7 +60,7 @@ body{
 }
 
 #menu{
-    width: 60%;
+    width: 70%;
     float: right;
     font-size: 18px;
 }
@@ -297,6 +297,9 @@ textarea{
     line-height: 70px;
     color: #444;
 }
+#footer p{
+    margin-bottom: 0px;
+}
 
 .article-item{
     width: 100%;
@@ -374,6 +377,108 @@ textarea{
 /* Responsive */
 
 @media(max-width: 1334px){
-    
+    .center{
+        width: 85%;
+    }
 }
 
+@media(max-width: 1314px){
+    .center{
+        width: 95%;
+    }
+    #menu ul{
+        width: auto;
+    }
+
+}
+
+@media(max-width: 782px){
+    #logo{
+        float: none;
+        width: 240px;
+        height: 50px;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+
+    #menu, #menu ul{
+        clear: both;
+        float: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        line-height: 43px;
+    }
+
+    #content{
+        float: none;
+        width: 100%;
+    }
+
+    #sidebar{
+        float: none;
+        width: 60%;
+        margin: 0px auto;
+        margin-bottom: 50px;
+    }
+    #slider h1{
+        padding-top: 115px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 513px){
+    .mid-form{
+        width: 60%;
+    }
+}
+@media (max-width: 427px){
+    .mid-form{
+        width: 70%;
+    }
+}
+@media (max-width: 367px){
+    .mid-form{
+        width: 80%;
+    }
+}
+@media (max-width: 321px){
+    .mid-form{
+        width: 90%;
+    }
+}
+
+@media (max-width: 453px){
+    #header{
+        min-height: 130px;
+        overflow: hidden;
+    }
+    #menu,
+    #menu ul{
+        line-height: 50px;
+    }    
+    #menu ul li{
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    #slider{
+        height: 180px;
+    }
+    #slider h1{
+        padding-top: 30px;
+        font-size: 19px;
+    }
+    #slider .btn-white{
+        margin-top: 20px;
+    }
+    #slider.slider-small{
+        height: 100px;
+    }
+    #slider.slider-small h1{
+        padding-top: 35px;
+    }
+
+}
+
+/*
+*/
